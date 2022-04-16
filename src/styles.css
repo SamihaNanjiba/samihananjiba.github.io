@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Licorice&family=Merriweather&display=swap");
+@import url("./assets/css/bootstrap.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+header {
+  background-color: #6a2c70;
+}
+
+footer {
+  background-color: #1f0318;
+  color: #dbdaea;
+}
+
+section {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.profile-navbar a {
+  color: #dbdaea;
+}
+.profile-navbar a:hover {
+  color: #f9ed69;
+}
+
+.toggle-button {
+  background-color: #dbdaea;
+}
+
+.profile-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.profile-container::-webkit-scrollbar {
+  display: none;
+}
+
+.introduction {
+  background-color: #6a2c70;
+  color: #dbdaea;
+}
+
+.education {
+  background-color: #b83b5e;
+  color: #dbdaea;
+}
+
+.work {
+  background-color: #f08a5d;
+  color: #1f0318;
+}
+
+.skills {
+  background-color: #f9ed69;
+  color: #1f0318;
+}
+
+.footer a {
+  color: #dbdaea;
+}
+.footer a:hover {
+  color: #f9ed69;
+}
+
+#copyright {
+  font-size: 0.75rem;
+}
+
+/* CSV */
+/* c9c9ee, dbdaea, 1f0318,f9ed69,f08a5d,b83b5e,6a2c70 */
+
+/* With # */
+/* #c9c9ee, #dbdaea, #1f0318, #f9ed69, #f08a5d, #b83b5e, #6a2c70 */
+
+/* Array */
+/* ["c9c9ee", "dbdaea", 1f0318","f9ed69","f08a5d","b83b5e","6a2c70"] */
+
+/* Object */
+/* {"Lavender Blue":"c9c9ee", "Lavender Web":"dbdaea", "Dark Purple":"1f0318","Corn":"f9ed69","Coral":"f08a5d","Rose Red":"b83b5e","Midnight":"6a2c70"} */
+
+/* Extended Array */
+/* [{"name":"Lavender Blue","hex":"c9c9ee","rgb":[201,201,238],"cmyk":[16,16,0,7],"hsb":[240,16,93],"hsl":[240,52,86],"lab":[82,7,-18]},{"name":"Lavender Web","hex":"dbdaea","rgb":[219,218,234],"cmyk":[6,7,0,8],"hsb":[244,7,92],"hsl":[244,28,89],"lab":[88,3,-8]}, {"name":"Dark Purple","hex":"1f0318","rgb":[31,3,24],"cmyk":[0,90,23,88],"hsb":[315,90,12],"hsl":[315,82,7],"lab":[4,15,-6]},{"name":"Corn","hex":"f9ed69","rgb":[249,237,105],"cmyk":[0,5,58,2],"hsb":[55,58,98],"hsl":[55,92,69],"lab":[92,-12,64]},{"name":"Coral","hex":"f08a5d","rgb":[240,138,93],"cmyk":[0,43,61,6],"hsb":[18,61,94],"hsl":[18,83,65],"lab":[68,35,41]},{"name":"Rose Red","hex":"b83b5e","rgb":[184,59,94],"cmyk":[0,68,49,28],"hsb":[343,68,72],"hsl":[343,51,48],"lab":[44,53,8]},{"name":"Midnight","hex":"6a2c70","rgb":[106,44,112],"cmyk":[5,61,0,56],"hsb":[295,61,44],"hsl":[295,44,31],"lab":[30,38,-27]}] */
+
+/* XML */
+/* <palette>
+  <color name="Lavender Blue" hex="c9c9ee" r="201" g="201" b="238" />
+  <color name="Lavender Web" hex="dbdaea" r="219" g="218" b="234" />
+  <color name="Dark Purple" hex="1f0318" r="31" g="3" b="24" />
+  <color name="Corn" hex="f9ed69" r="249" g="237" b="105" />
+  <color name="Coral" hex="f08a5d" r="240" g="138" b="93" />
+  <color name="Rose Red" hex="b83b5e" r="184" g="59" b="94" />
+  <color name="Midnight" hex="6a2c70" r="106" g="44" b="112" />
+</palette> */
