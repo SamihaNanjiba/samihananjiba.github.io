@@ -15,13 +15,14 @@ h4,
 h5,
 h6 {
   font-family: "Bitter", serif;
+  margin: 0;
 }
 
 hr {
   border: dotted #1f0318 6px;
   border-bottom: none;
   margin: 20px auto;
-  width: 6%;
+  width: 10%;
 }
 
 header {
@@ -96,9 +97,10 @@ section {
 
 .education-details {
   width: 50%;
+  color: #1f0318;
 }
 .education hr {
-  background-color: #b83b5e;
+  background-color: #ffffff;
 }
 .work {
   /* background-color: #f08a5d; */
