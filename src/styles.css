@@ -8,6 +8,22 @@
   font-family: "Merriweather", serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bitter", serif;
+}
+
+hr {
+  border: dotted #1f0318 6px;
+  border-bottom: none;
+  margin: 20px auto;
+  width: 6%;
+}
+
 header {
   background-color: #6a2c70;
 }
@@ -55,14 +71,51 @@ section {
   color: #dbdaea;
 }
 
-.education {
-  background-color: #b83b5e;
-  color: #dbdaea;
+.introduction h1 {
+  font-family: "Licorice", cursive;
+  font-size: 5.625rem;
 }
 
+.education {
+  /* background-color: #b83b5e; */
+  color: #dbdaea;
+}
+.education-header {
+  padding-bottom: 10px;
+}
+.education-title {
+  text-align: center;
+  background-color: #b83b5e;
+  height: 100vh;
+  width: 50%;
+}
+.education-title h1 {
+  font-family: "Licorice", cursive;
+  font-size: 5.625rem;
+}
+
+.education-details {
+  width: 50%;
+}
+.education hr {
+  background-color: #b83b5e;
+}
 .work {
-  background-color: #f08a5d;
+  /* background-color: #f08a5d; */
   color: #1f0318;
+}
+
+.work-details {
+  width: 50%;
+}
+.work-title {
+  background-color: #f08a5d;
+  height: 100vh;
+  width: 50%;
+}
+.work-title h1 {
+  font-family: "Licorice", cursive;
+  font-size: 5.625rem;
 }
 
 .skills {
@@ -76,7 +129,10 @@ section {
 .footer a:hover {
   color: #f9ed69;
 }
-
+.fa-linkedin-in {
+  position: relative;
+  padding-left: 1.25em;
+}
 #copyright {
   font-size: 0.75rem;
 }
