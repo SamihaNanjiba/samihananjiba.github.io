@@ -18,8 +18,32 @@ h6 {
   margin: 0;
 }
 
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  font-size: 1em;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+p {
+  line-height: 2;
+}
 hr {
-  border: dotted #1f0318 6px;
+  background-color: #ffffff;
+  border: dotted #30011e 6px;
   border-bottom: none;
   margin: 20px auto;
   width: 10%;
@@ -27,11 +51,17 @@ hr {
 
 header {
   background-color: #6a2c70;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
 }
 
 footer {
-  background-color: #1f0318;
+  background-color: #30011e;
   color: #dbdaea;
+  position: relative;
+  width: 100vw;
+  top: 105vh;
 }
 
 section {
@@ -76,10 +106,10 @@ section {
   font-family: "Licorice", cursive;
   font-size: 5.625rem;
 }
-
 .education {
   /* background-color: #b83b5e; */
   color: #dbdaea;
+  position: relative;
 }
 .education-header {
   padding-bottom: 10px;
@@ -88,7 +118,13 @@ section {
   text-align: center;
   background-color: #b83b5e;
   height: 100vh;
-  width: 50%;
+  /* width: 50%; */
+}
+.vertical-center {
+  align-items: center;
+  display: flex;
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
 }
 .education-title h1 {
   font-family: "Licorice", cursive;
@@ -96,15 +132,16 @@ section {
 }
 
 .education-details {
-  width: 50%;
-  color: #1f0318;
+  /* width: 50%; */
+  color: #30011e;
 }
-.education hr {
-  background-color: #ffffff;
-}
+
 .work {
   /* background-color: #f08a5d; */
-  color: #1f0318;
+  color: #30011e;
+  height: 90vh;
+  position: relative;
+  top: 105vh;
 }
 
 .work-details {
@@ -122,11 +159,12 @@ section {
 
 .skills {
   background-color: #f9ed69;
-  color: #1f0318;
+  color: #30011e;
 }
 
 .footer a {
   color: #dbdaea;
+  text-decoration: none;
 }
 .footer a:hover {
   color: #f9ed69;
@@ -135,30 +173,37 @@ section {
   position: relative;
   padding-left: 1.25em;
 }
+
+.footer-link {
+  text-decoration: none;
+  padding: 20px 0;
+}
 #copyright {
   font-size: 0.75rem;
+  margin-bottom: 0;
+  padding: 20px 0;
 }
 
 /* CSV */
-/* c9c9ee, dbdaea, 1f0318,f9ed69,f08a5d,b83b5e,6a2c70 */
+/* c9c9ee, dbdaea, 30011e,f9ed69,f08a5d,b83b5e,6a2c70 */
 
 /* With # */
-/* #c9c9ee, #dbdaea, #1f0318, #f9ed69, #f08a5d, #b83b5e, #6a2c70 */
+/* #c9c9ee, #dbdaea, #30011e, #f9ed69, #f08a5d, #b83b5e, #6a2c70 */
 
 /* Array */
-/* ["c9c9ee", "dbdaea", 1f0318","f9ed69","f08a5d","b83b5e","6a2c70"] */
+/* ["c9c9ee", "dbdaea", 30011e","f9ed69","f08a5d","b83b5e","6a2c70"] */
 
 /* Object */
-/* {"Lavender Blue":"c9c9ee", "Lavender Web":"dbdaea", "Dark Purple":"1f0318","Corn":"f9ed69","Coral":"f08a5d","Rose Red":"b83b5e","Midnight":"6a2c70"} */
+/* {"Lavender Blue":"c9c9ee", "Lavender Web":"dbdaea", "Dark Purple":"30011e","Corn":"f9ed69","Coral":"f08a5d","Rose Red":"b83b5e","Midnight":"6a2c70"} */
 
 /* Extended Array */
-/* [{"name":"Lavender Blue","hex":"c9c9ee","rgb":[201,201,238],"cmyk":[16,16,0,7],"hsb":[240,16,93],"hsl":[240,52,86],"lab":[82,7,-18]},{"name":"Lavender Web","hex":"dbdaea","rgb":[219,218,234],"cmyk":[6,7,0,8],"hsb":[244,7,92],"hsl":[244,28,89],"lab":[88,3,-8]}, {"name":"Dark Purple","hex":"1f0318","rgb":[31,3,24],"cmyk":[0,90,23,88],"hsb":[315,90,12],"hsl":[315,82,7],"lab":[4,15,-6]},{"name":"Corn","hex":"f9ed69","rgb":[249,237,105],"cmyk":[0,5,58,2],"hsb":[55,58,98],"hsl":[55,92,69],"lab":[92,-12,64]},{"name":"Coral","hex":"f08a5d","rgb":[240,138,93],"cmyk":[0,43,61,6],"hsb":[18,61,94],"hsl":[18,83,65],"lab":[68,35,41]},{"name":"Rose Red","hex":"b83b5e","rgb":[184,59,94],"cmyk":[0,68,49,28],"hsb":[343,68,72],"hsl":[343,51,48],"lab":[44,53,8]},{"name":"Midnight","hex":"6a2c70","rgb":[106,44,112],"cmyk":[5,61,0,56],"hsb":[295,61,44],"hsl":[295,44,31],"lab":[30,38,-27]}] */
+/* [{"name":"Lavender Blue","hex":"c9c9ee","rgb":[201,201,238],"cmyk":[16,16,0,7],"hsb":[240,16,93],"hsl":[240,52,86],"lab":[82,7,-18]},{"name":"Lavender Web","hex":"dbdaea","rgb":[219,218,234],"cmyk":[6,7,0,8],"hsb":[244,7,92],"hsl":[244,28,89],"lab":[88,3,-8]}, {"name":"Dark Purple","hex":"30011e","rgb":[31,3,24],"cmyk":[0,90,23,88],"hsb":[315,90,12],"hsl":[315,82,7],"lab":[4,15,-6]},{"name":"Corn","hex":"f9ed69","rgb":[249,237,105],"cmyk":[0,5,58,2],"hsb":[55,58,98],"hsl":[55,92,69],"lab":[92,-12,64]},{"name":"Coral","hex":"f08a5d","rgb":[240,138,93],"cmyk":[0,43,61,6],"hsb":[18,61,94],"hsl":[18,83,65],"lab":[68,35,41]},{"name":"Rose Red","hex":"b83b5e","rgb":[184,59,94],"cmyk":[0,68,49,28],"hsb":[343,68,72],"hsl":[343,51,48],"lab":[44,53,8]},{"name":"Midnight","hex":"6a2c70","rgb":[106,44,112],"cmyk":[5,61,0,56],"hsb":[295,61,44],"hsl":[295,44,31],"lab":[30,38,-27]}] */
 
 /* XML */
 /* <palette>
   <color name="Lavender Blue" hex="c9c9ee" r="201" g="201" b="238" />
   <color name="Lavender Web" hex="dbdaea" r="219" g="218" b="234" />
-  <color name="Dark Purple" hex="1f0318" r="31" g="3" b="24" />
+  <color name="Dark Purple" hex="30011e" r="31" g="3" b="24" />
   <color name="Corn" hex="f9ed69" r="249" g="237" b="105" />
   <color name="Coral" hex="f08a5d" r="240" g="138" b="93" />
   <color name="Rose Red" hex="b83b5e" r="184" g="59" b="94" />
