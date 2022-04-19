@@ -61,7 +61,6 @@ footer {
   color: #dbdaea;
   position: relative;
   width: 100vw;
-  top: 105vh;
 }
 
 section {
@@ -123,8 +122,8 @@ section {
 .vertical-center {
   align-items: center;
   display: flex;
-  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  /* min-height: 100%; Fallback for browsers do NOT support vh unit */
+  /* min-height: 100vh; These two lines are counted as one :-)       */
 }
 .education-title h1 {
   font-family: "Licorice", cursive;
@@ -137,19 +136,17 @@ section {
 }
 
 .work {
-  /* background-color: #f08a5d; */
   color: #30011e;
   height: 90vh;
-  position: relative;
-  top: 105vh;
 }
 
 .work-details {
   width: 50%;
+  min-height: 100%;
 }
 .work-title {
   background-color: #f08a5d;
-  height: 100vh;
+  min-height: 100%;
   width: 50%;
 }
 .work-title h1 {
