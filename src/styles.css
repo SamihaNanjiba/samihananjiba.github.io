@@ -55,11 +55,15 @@ header {
   width: 100vw;
   z-index: 10;
 }
+header ul {
+  margin-right: 10px;
+}
 
 footer {
   background-color: #30011e;
   color: #dbdaea;
   position: relative;
+  padding: 50px 0 20px;
   /* width: 100vw; */
 }
 
@@ -173,6 +177,7 @@ section {
 
 .footer-link {
   text-decoration: none;
+  margin: 10px;
   padding: 20px 0;
 }
 #copyright {
