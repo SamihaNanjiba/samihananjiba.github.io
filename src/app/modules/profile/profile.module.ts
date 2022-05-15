@@ -7,7 +7,7 @@ import { IntroductionComponent } from 'src/app/components/profile/introduction/i
 import { EducationComponent } from 'src/app/components/profile/education/education.component';
 import { WorkComponent } from 'src/app/components/profile/work/work.component';
 import { HeaderComponent } from 'src/app/components/header/header.component';
-import { FooterComponent } from 'src/app/components/footer/footer.component';
+// import { FooterComponent } from 'src/app/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { FooterComponent } from 'src/app/components/footer/footer.component';
     IntroductionComponent,
     EducationComponent,
     WorkComponent,
-    FooterComponent,
+    // FooterComponent,
   ],
   imports: [CommonModule, ProfileRoutingModule],
 })
